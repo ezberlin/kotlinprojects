@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 50
+        placeholder_text: // Implement additional functions and classes here
+        initial_state:
+          length: 50
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: 9a/MO/xTh0xxdGtHtWf53KpGBnMIZevABatPt36Hu5ttdJGnYKObPZ2/hbGZORdq/VCPED4+oj1I7+g3rxB9i/ERyB2UqZlhFyoe4qdd36uGHhcHLVzGkHxWYurZAlkWGle0Pj4ve8hoTJw9JSuMUzwgK4sMdg1UlW9wgS6I2SHYVEsGDZDoAoQyppcqJ8hIodVCbmi5TmbI7CkjeJXodPCIn1W6PqYiMQmyh82DrpG6iTh1Rkp3RgXQoRfxEpc4S6KYQn8fgVRsQAUp9Mn2Y6bScZpjQN3xcAquFErhs3SkWiingZ9wdyWeIDTBLFLkoPD3rB4mUMv0hEE9OA67Pc+HWuD9jGPsi/gyZrwE6XbDXOiBZYHRG+mB7Uz297JVcV3V7GK3n4EOYUm2l0Z5XR5JVqWyoNElWL3U4rgnXPcK+LN+q5Zcgw4AH4fVaxaxaZSSn+PurJ/Di/gKmFTE0Ccx2d1ZK3r01ftgrWqkjPxgkDiAJIDZmJ4641xF2nnUcnO/OvurW+jEyCRcZ5nbIDSw4MxBH+JUwueKpoghtn4+8XhbVVNnxDqVJjLmFpKTZfLkisNgHMFGXOWqW++6W+OfhKNjatW8IgBmt5AV5R7Rd5Pfv2docVl9cakKLqbB7MaM7hdsD9MmzhVLGXurWyyiUTUpgKSGsFQY3xhoDJEowSZOjb+t3o1xxEsKg5+j02aWBV0m4q9KsYpHsKejTFJ4gxArXFlh44/QssY6YBCZEN9eOrFqRaKerO+pOxHhtsRBP8VVbu1h0PB2pQ8etwhM2u0+MkrFUSre9axV4T7WvPxlsQFb0MeFg6CGR+FXHLmSt3hw6bLoxLVuFtHG8fy5Y56vxDWsLyCTC+xmKmATrkXY7mwcClp23AxjRIlcXSRFiZNQkmtIeG9JzvFjY8CFJwoUOcBIwe98KS/t6VYbIv7pJVo8Pf4WFweelFwgMNziiFrYoyRsUVuGsYN4Z5XUJLX6t/T+0Z6DWnHQqihvzqcdS39vnAw1Ueog/kieD4wpzYVNyAfAA3TJZBeXPNHvPw93ywvHvIzMsZKC3/YjKkBIjqYYWD3De1guIIsyFn5xdHSpdn42NkzNFhOQBqTwgDgpawpqIzP+Ot7b1F94MiJ9QExtS81ZIPez0twrVkTjbkVekvJ2VJF3CC3GwPO1a/577A+uHpVmoAU9PkRm92/a95+XBByuotLZni0P7HrPTzcEuFrHtCUcbmd9hi+9W/8z0bSkVGnumERY9/alJnwWyEJrp3pOMoF9RUc1MdzQWmzAWpxumC5P81vIPQ==
+        selected: false
+        status: Unchecked
+      - offset: 118
+        length: 23
+        placeholder_text: TODO("not implemented")
+        initial_state:
+          length: 23
+          offset: 118
+        initialized_from_dependency: false
+        encrypted_possible_answer: a0g4+9HUvvRWABk/WQOpOYUSUatPULzNFTE5PgZJBe+UpEHERLsC5ZyN9TIePtiP
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Divide+and+Conquer+/+Count+Inversions
+status: Unchecked
+record: -1

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:ice"
+    }
+  },
+  "result": {
+    "item": "modtest:ice_cube",
+    "count": 4
+  }
+}
+

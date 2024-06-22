@@ -1,0 +1,43 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 53
+        placeholder_text: |2
+        
+          // Use additional functions and classes if required
+        initial_state:
+          length: 53
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: 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
+        selected: false
+        status: Unchecked
+      - offset: 127
+        length: 36
+        placeholder_text: '    TODO("write your solution here")'
+        initial_state:
+          length: 36
+          offset: 127
+        initialized_from_dependency: false
+        encrypted_possible_answer: 8teKmWVp74ZsYjr4hixa7QvOXX/hRUQTltjA0W/27HBvGnN8K8jKKiocu2iJHUckay/slxNRhvvU2W/c8+jWVg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Dynamic+Programming+/+Longest+Palindromic+Subsequence
+status: Unchecked
+record: -1

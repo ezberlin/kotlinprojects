@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 64
+        length: 31
+        placeholder_text: '    TODO("not implemented yet")'
+        initial_state:
+          length: 31
+          offset: 64
+        initialized_from_dependency: false
+        encrypted_possible_answer: eQ7AmvtuH67J0rfT/TjAotAQPszUBS207fIX5PoDUeKtqeSg6CSpXaVAQrfFXIkKigfBZvsJdompXypAvvUnxpdUo1m47GVsX/lmOXnihYD6hBvbWgBmjwpLnDXNCIUWlp2W5c1ilnGEKXIA6BxadOnGvX6i+E8FZSq/yhLoAhhQPTd2l/fsymv2515gGDhU5MfB9TxyVJmosdLL/XwdtMuIGW9PlNUrgxNT2PH5WDbPGL3qJbEHupi7M4kgUvlEVNzPs43e212ur/rVmLNr8BLhtJHf/Itsqml56TyrvHWiawIzKS+DW8wrFlNL48TO1oQehy0cRJOK+PsEioW/fr+SVR/dUzmGTNciZ8/+BLb32Xcn5ag4aSbI69GzfC83mus7Puct9Xgvgm70MJyXbSVSu7DWiGhOMx+CYGiW0h0AgnrGryBkqAy9ABs6rl04EYyywjzs/nHYjVlVbOvtAHfahy30xp92zxQu9O1H/OQ=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Dynamic+Programming+/+Minimum+Sum+Path
+status: Unchecked
+record: -1

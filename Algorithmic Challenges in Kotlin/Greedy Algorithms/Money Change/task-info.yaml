@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 30
+        length: 40
+        placeholder_text: '    TODO("implement your solution here")'
+        initial_state:
+          length: 40
+          offset: 30
+        initialized_from_dependency: false
+        encrypted_possible_answer: fyktpsbM/i8M+iitKSpbLwvFFn557rlQn3CXojSKid8Dbir8e0xRr/pDvjgxF92Q+1Lqlx29lStGiw9oEcev727UgULJkHR4U7Ne4y0X7dcRvISiCWLHrTJ2SkxRzG/htPmqEsE2Opr0DS5ZgkTCVyD7ZNCgmdRTOBeWz3/hN7NQky67SG7F5YdJgxHosuaHOGJPShaiJa6grxfGMT2QmKbKTPJstJjp/iWEGLVyzXOV7sfkxvUPxUzqBUZG1t8XJ51yBw64uJ/RIUL4slTs+sH7QTg/FtO7XzI22CF09UQ=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Greedy+Algorithms+/+Money+Change
+status: Unchecked
+record: -1

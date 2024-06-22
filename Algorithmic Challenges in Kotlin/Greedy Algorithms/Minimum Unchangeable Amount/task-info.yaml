@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 45
+        length: 38
+        placeholder_text: "    return v.sumOf { it.toLong() } + 1"
+        initial_state:
+          length: 38
+          offset: 45
+        initialized_from_dependency: false
+        encrypted_possible_answer: PWJOdmAVUS0QXZ8iWq/0Aabp5kARvdUZBqNfDpoSqTv3fiPWGWRHhBqGQscn5A7aHjsEKb2FLFcr4lyowr3E0icWKYewwopmUh3Ai7zvdkRcUFQlX1g3mUKGjtwtonINudJYYw9HblIgSDAdJ6qacPQIkBCYi01Cxdonj+MphAY06H77NXOani19yp2+w44N6+1MmgCxFhRHpRWClc0lp2udTz0vevqT3ot6r37Kwe0=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Greedy+Algorithms+/+Minimum+Unchangeable+Amount
+status: Unchecked
+record: -1

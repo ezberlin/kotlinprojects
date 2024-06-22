@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 45
+        length: 27
+        placeholder_text: '    TODO("not implemented")'
+        initial_state:
+          length: 27
+          offset: 45
+        initialized_from_dependency: false
+        encrypted_possible_answer: GPz7phMxRDuXV35dHBYCznLRVY23uhITcO/dc0Z4ROuiKhxyIuTbo35fPQx/+E7BoYkUOPJp4MeDzSLhGG+4T0bvnZHMKlFhmh5d19TBgEp/Xf1KfvfQma7yljn6JjqaATlkPc3rWAb4Qo2cJejbbU/7DrrEFv7HOGnM+3d4e/NpSHmpMCU08sWbiL2IyI0/Qs+ug9d9u0EAcBi7pQGcsKvEkb8FTrwMehB6se/b5zup53oogex5K1jRyNJghNuch2vuU3BNUzxUFQyNKqikE72Cnujs7t2aVs1IeFeEgAjJJ9rFwCeMBpGw3RqJerGm
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Greedy+Algorithms+/+Distinct+Summands
+status: Unchecked
+record: -1

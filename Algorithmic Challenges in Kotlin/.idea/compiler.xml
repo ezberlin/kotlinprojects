@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Binary_Strings.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Binary_Strings.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Derangements.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Derangements.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Partitions.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Partitions.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Subsets.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Generate_Subsets.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Introduction.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Brute_Force-Introduction.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Count_in_Range.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Count_in_Range.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Count_Inversions.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Count_Inversions.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Guess_a_Number.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Guess_a_Number.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Lower_Bound.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Lower_Bound.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Median_in_Two_Sorted_Lists.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Median_in_Two_Sorted_Lists.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Opposite_Values.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Opposite_Values.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Points_and_Segments.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Points_and_Segments.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Searching_Sorted_Data.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Searching_Sorted_Data.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Sorting_Data.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Divide_and_Conquer-Sorting_Data.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Edit_Distance.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Edit_Distance.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Longest_Palindromic_Subsequence.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Longest_Palindromic_Subsequence.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Maximum_Amount_of_Gold.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Maximum_Amount_of_Gold.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Minimum_Sum_Path.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Minimum_Sum_Path.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Money_Change_Again.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Money_Change_Again.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Primitive_Calculator.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-Primitive_Calculator.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-The_Main_Idea.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Dynamic_Programming-The_Main_Idea.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Collecting_Signatures.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Collecting_Signatures.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Distinct_Summands.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Distinct_Summands.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Minimum_Unchangeable_Amount.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Minimum_Unchangeable_Amount.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Money_Change.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-Money_Change.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-The_Main_Idea.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Greedy_Algorithms-The_Main_Idea.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Blocks_of_Ones.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Blocks_of_Ones.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Blocks_of_Ones_with_Updates.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Blocks_of_Ones_with_Updates.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Ones.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Ones.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Ones_with_Updates.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Count_Ones_with_Updates.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Range_Sum_Queries.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Queries_and_Incremental_Updates-Range_Sum_Queries.test" target="11" />
+      <module name="algo-challenges-in-kotlin.util.main" target="11" />
+      <module name="algo-challenges-in-kotlin.util.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Estimating_the_Running_Time.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Estimating_the_Running_Time.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product_—_Fixing_the_Time_Limit_Issue.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product_—_Fixing_the_Time_Limit_Issue.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product_— Fixing_the_Integer_Overflow_Issue.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Maximum_Pairwise_Product_— Fixing_the_Integer_Overflow_Issue.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Sum_of_Two_Digits.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Sum_of_Two_Digits.test" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Welcome.main" target="11" />
+      <module name="algo-challenges-in-kotlin.Warmup-Welcome.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

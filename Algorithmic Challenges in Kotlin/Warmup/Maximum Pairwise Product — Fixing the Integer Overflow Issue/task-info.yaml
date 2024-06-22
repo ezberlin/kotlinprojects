@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 24
+        length: 253
+        placeholder_text: |-
+          fun maximumPairwiseProduct(a: IntArray): Int {
+              val len = a.size
+              var res = Int.MIN_VALUE
+              for (i in 0 until len) {
+                  for (j in i + 1 until len) {
+                      res = max(res, a[i] * a[j])
+                  }
+              }
+              return res
+          }
+        initial_state:
+          length: 234
+          offset: 24
+        initialized_from_dependency: false
+        encrypted_possible_answer: KRY7FpKCH4XNd9XlhsypeV/gYvOf7VP8dj+BuaWKcs/1CagvG5j3gk0ynXxAcuF69huNDVNUjwLtXPBZQjem7Ulg8A0qCTOLvM9DaHDm0A//w81aCfZ34FxVSY+lg6f0SLJF04uw8Ct1dJhbeWqjO1o/1F22YJE6n4Jc7fC6oyB7zuZI1sEdHWJ1bDu5EwMKILlFUmU/kprIkRWhdq0N6dLA3vcgrbH9xZNihIoCC0UVWPRm+xjmoH5hXr1LbqYDfPvRWJWJUy+9GTjZ2Z80CowX2/JjSXggvtj4PKS72RIUh8NYrUUCugZeEwQ5xJN0jUGjZ1THvLewAa/vk/INmQ==
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Warmup+/+Maximum+pairwise+product+fixing+integer+overflow
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Jun 2024 08:33:17 UTC"
+record: -1

@@ -1,0 +1,62 @@
+type: edu
+files:
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: src/CountBlocksOfOnesWithUpdates.kt
+    visible: true
+    placeholders:
+      - offset: 57
+        length: 42
+        placeholder_text: |
+          // write required fields and methods here
+        initial_state:
+          length: 42
+          offset: 57
+        initialized_from_dependency: false
+        encrypted_possible_answer: WeBMgWPm1jYcxFFH2Ww0LSZ1t360GQPUkkPhFERitKQ0GyYBMugdTuAGX2mWRFUvbIRTMS4Tvunpm4rgUMToBExm8QnpQouVFL7HNfLUv0zR6d77cfi124+KVMt45ti0BbblKLD2PO86adexiq+BPhBUxSvl8L/McyVD3y5Yt1t8vuf05R//adkWT5zEPcOfxxJx+NLKOHo1FF7UOj0L1TM+YY4ft+LaZn3pKiklrDvOewqf0m3lNF+MqgpxQwB9AnfsJWe2azjAtMiGMbmP9e7/ibzZovEkyzL86y/z1ToFpkBHLX4oFIIHNsTiKTe47eQetFpHYM3dmpBhoVSDdu6rWKzBjrOqNI7wDETM27Th7LGAXIvy7oNexuVoSjbg5Cn/TvEkKVTayoa2QnfiKQSWyySHF9J79P7JGCEI1ohWnG+el0fJgNB8xAw3otneqpKtMgxewS+vqrHnr2z33POX7XbYAr1cMMIQwhDYmsAihDUw9ZwuYzHYTKVr7vS+0XRTSDxvclazZZrhwhjDAg==
+        selected: false
+        status: Unchecked
+      - offset: 127
+        length: 31
+        placeholder_text: '        TODO("not implemented")'
+        initial_state:
+          length: 31
+          offset: 127
+        initialized_from_dependency: false
+        encrypted_possible_answer: rv641lv9eyb8p9/+bCsFHTF3BHKQNPd/i+DFoEC2uEE=
+        selected: false
+        status: Unchecked
+      - offset: 201
+        length: 31
+        placeholder_text: '        TODO("not implemented")'
+        initial_state:
+          length: 31
+          offset: 201
+        initialized_from_dependency: false
+        encrypted_possible_answer: LM1obfNkKP+K/XgcJbmviwG2eiaQbK7uk+nFQ9vsIQU=
+        selected: false
+        status: Unchecked
+      - offset: 267
+        length: 31
+        placeholder_text: '        TODO("not implemented")'
+        initial_state:
+          length: 31
+          offset: 267
+        initialized_from_dependency: false
+        encrypted_possible_answer: 1mUJBbKweA6UzczqplU3eNb+mftd8h/o1UsyhSFfZsmkAVeliyrFD28xP7nRk51wH4anZ/qQyS5PwkIoY4nFgK/Evf2jmoAFFlzaQlq+5CgZLx52TogtjIpFItc5EfYA4LV9h9HsMcPGe2ith3JQ2RW6EvvVG9qvf6/cw4p+WH5CvPevEcB1+nW0jCJaL61nKxSUULZV1NdWTHULzfgtInvBUuIx6tYH5wHaWOOsf04fIuQEbozqgBtNTR640xyk8/1kti8xTIvxMbW/nnmEk9zv9kMikRw1sZfc7xTiJNo5rBwHDAYx02kVQVM94OEd+7hmzpPx0LSk42qQY7XEqRldRH4SFmC0DYC64f26xV06N7F1AOQujIbZRrRhayDjS/LquXAsRvB7k3G+/IJEF8HbOhGTqubvIbqHtjJOcsTZu5Vpr0aGT2TJhQnI79A6CjXYAL1q0ukWe9fX/5S/ti8lMM78UPv4DKBBZvFJpLVh38VSdTFzzNu2oa7bY87tt878u8rTgzpkW8HSTUGwxwAV4hAwpOR2I1Pa86j6t/z18e2kmhyC6IDtwP2/1DRF5lFVuk9pIY7lQFeG0xBgCYAOIh5Bi1Sz4MOK4ZTvc+Xw6uOirNy2tdoPUOUvJRbDB7togehcwBUOzg6xU4sWT6EZ8CNnaoH1R2RrP31kLYwfJCk+hYuh9NJF064dNje2fMYJ+ppBwwPop4k7QIYfnmwUrpgg7nXmA+xQdfkSqY6Xp8d6Wsgj41iDzIrHUx5JyYmpk6MLFNf7eRdpIULACg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Queries+and+incremental+updates+/+Count+Blocks+of+Ones+with+updates
+status: Unchecked
+record: -1

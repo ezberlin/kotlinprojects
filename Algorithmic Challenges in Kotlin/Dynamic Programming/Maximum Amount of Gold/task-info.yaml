@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 78
+        length: 216
+        placeholder_text: |2
+              weights.sortDescending()
+              var capacityLeft = backpackCapacity
+              for (w in weights) {
+                  if (capacityLeft >= w) {
+                      capacityLeft -= w
+                  }
+              }
+              return backpackCapacity - capacityLeft
+        initial_state:
+          length: 216
+          offset: 78
+        initialized_from_dependency: false
+        encrypted_possible_answer: gZp51bzwiTOz7J/gYuoRcZBY5huTZlDoTyOMB1JwrLhCwcmo7m6T4tFOjgYgCl8WS95RdtaKqYnKC9ccN8jex/XpN1zoCxcShxGHcg+4XkuXNgn9mrF5d8w8Isc+HtEcB5VxxkY0gqIw0ZYBBCfHTrfO+0tOmXs3BR416X6E2AWOz1RWS73WaOGlMP0uDARwO/Vjgi20xQNB5jgToEyDnycVYW0Th3CN+y0TTxBNLS1U6oqzaKgHDeum1F7X1leh2ggaHUsnFk3G4o7uP1MzX/SjknmIjQeW7D/Kha7Vs0EOXrExXN5Xn19hPiXyVcW2zrewf/U7DRCXPVx0M4yP9k9UeCSk5No9EXJZm+LydTPxs2ioeKq8V+VGbZPYq2Bpn9KhZZoNvGrp3GHGTLthOn61+l0A5yvWb0H0zqyTFcZhAgUzcEt95eIEe8iJ8pgXQLHQ6AOQSUCgObb+EynDKHK07T/RmtDZYhVxMRjFjxc=
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Dynamic+Programming+/+Maximum+Amount+of+Gold
+status: Unchecked
+record: -1

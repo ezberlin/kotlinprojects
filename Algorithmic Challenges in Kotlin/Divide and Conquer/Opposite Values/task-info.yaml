@@ -1,0 +1,32 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 57
+        length: 24
+        placeholder_text: return str.indexOf("01")
+        initial_state:
+          length: 24
+          offset: 57
+        initialized_from_dependency: false
+        encrypted_possible_answer: 2oU9zlz1UY/RqUksVx2wjhGMtkfnQXispKCrD1rL5Z7+liNjf3YrAn0nldTU0PfdcZ0DQvVOJzMS8lPZZR9D9sKrV3uT7+964jP110P7qEaltwzvco9cOoDbwAf6JCe3a6OVC/F8ofnqftZCDREMfXQNCuegvxZaSj758B70XiknmgTaCruMJ0Ym4k3j5FVfVUZoJr2XhJMSi0UQ/Cp8g2rXdG8XG8yzK3+8V7ZjnhJMNgtS66qoXJ2r1jqhZ2JT6f5QLe/BKq615gljyQql+17NBq4c3BGudCjvhin/ol/1MUczw7nT2Eio4CXVpZLiqUVdGtToAz3WMU3AYksToQ==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Divide+and+Conquer+/+Opposite+Values
+status: Unchecked
+record: -1
+solution_hidden: false

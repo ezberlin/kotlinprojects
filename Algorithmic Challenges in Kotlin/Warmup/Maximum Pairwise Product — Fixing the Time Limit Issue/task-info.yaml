@@ -1,0 +1,39 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 47
+        length: 55
+        placeholder_text: |2
+              val len = a.size
+              var res = Long.MIN_VALUE
+              for (i in 0 until len) {
+                  for (j in i + 1 until len) {
+                      res = kotlin.math.max(res, a[i].toLong() * a[j])
+                  }
+              }
+              return res
+        initial_state:
+          length: 208
+          offset: 48
+        initialized_from_dependency: false
+        encrypted_possible_answer: rzgHWZusbCXqARIMHOWLWOL4iVd6GMbHCMEojlR/KEBYq6Vdvw2Ouo5pjIflo2YadbkFaV/jjugycAU//GTXq1150s2mIPDtFpErZKPqxofVvdgFmwV8KWnWje769Ql/kM5ie3Kv8d8/e4l38DcTflg38JkEUe8Or4ZHGFwWTlwEa6Mk59D091T6tDmZdR9p61k7qsQiLIALX+iUtLjUciL57aHKImpw+1NHBOSw5zV4L6AANHGu0YRJ24+jAdaAHASQLo+6boSPwNwBHLhbJvUTVsCC7DgrYv9bfYyaXomoy9L0lPGKqIIeAj/QBqpvfY60B2YJGH08+DTVe1TZd2SSAq1HbY6a2djOqw2BXEslNPLKwkjb93IE5NIYsVJ49VIHONEHoZ7uKHdabYW+1g==
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Warmup+/+Maximum+pairwise+product+fixing+time+limit+issue
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Jun 2024 08:53:05 UTC"
+record: -1

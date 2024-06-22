@@ -1,0 +1,35 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 90
+        length: 132
+        placeholder_text: |2
+              return IntArray(points.size) { index ->
+                  val x = points[index]
+                  segments.count { x in it.first..it.second }
+              }
+        initial_state:
+          length: 132
+          offset: 90
+        initialized_from_dependency: false
+        encrypted_possible_answer: ob8T+FdAWOy04JFmf+03FXc1oE/UpowqbA9C5bQ7GiRNxp51cm30yHVMJlArOM7w94lHfC/bKI5Fm/3Yk7qdexjx+uS+cRp0Ee64uSM/5dSwsZrHBSwZbXVs8hlvnj3mRGYbqDEj4QTZbiD5BMzB8iTpc+bluWaiyWYIpmY+m1egMEfiIOZ3IZzQcNhTXD3uh/4SC/fpXEOQJIoouL6oCfDxKDEzACn6v85lXMWg+piQpsAn/8eIHIXaIY9keLR4eZqupXFujiFAjyIQG7F9uo/jm7mHZAjRnGfLLrPE7CA03FnkwSPS4rwAeSFrmcPVG6ktTUcodAvoa7ThcMjCLJACO5QYzL38xERgE+LquvFuQ1NRjshqxbk4Vl8FpsA1+dekq+NBLBuexpTYlHaXvm/E35nDFqAvaUJW5PnyBMuJ2/cu3ZAtQh68UcORfxU9NuUJ9OFigDU0DzRiVcioUcwa1rfiMWeQtusQN/hOfpwxl/hlK10oAvFlThuyK7IcPQ5uT/cW6r3apYsrSb1OrejWzT2WH3k/rsEMjr1MfkmW2bHCHpoog3lQkrcjROXQrhyXiYNwWeQc2Ls9BKf29rHfidPEOsdQQLxRqGrvAb4lQPBpN1Qrv0aD1BTgXc66/qakEv0Cj934ypXf1hywDQ7KhS73siNL1HnGUfn2zY8kn+TF8anmxsxQ/08IfIt1KbAOQM28WPo8LOtvmLbCHB74FjcGkg/SpV8SJzkW9zDdf3tQcE7YWaq1QjlGDiKpVqgN9idJ9HcaWQ4X+uBA9TVFzyVkMAiibYeD3Hb8EntFUG4mvV8VwrcoW16rmc0C6ChBcoYH29/MbxoigW+gg7Wt2O8zO4NptL1Zr87bPchPwN/EPXNvBDmtANbXUPqpzSfz/06VNOMlrq2BS4u3RNMFAJBUDQB2OoWiesMWzT8Jgcl8wO30tb8RuKRD4R4P1ub7k3wiQJkzJ0kx+1927JZWThW6EgwU7A8dtvcoZqbfz0LlUHKnRyFnh8piEYh2+luPA7P0eAsy2rEO3SjDuCegXsSDFzUFPblCtVS2ulY31Lyq0STyW4wZkgbqU0cP1R3QWC90G1yoK6jaFhWTUXYYBtfd1K7sIGWgyo+tXUR5wfvfZ/Snc0c93h2KMDKv
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Divide+and+Conquer+/+Points+and+Segments
+status: Unchecked
+record: -1

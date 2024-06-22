@@ -1,0 +1,44 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 1
+        length: 46
+        placeholder_text: // Write additional classes and functions here
+        initial_state:
+          length: 46
+          offset: 1
+        initialized_from_dependency: false
+        encrypted_possible_answer: YcMtJSyg9U+qeik1mhrS7BT0PMOIX7gmCBuIv3kCRbt7aAz0ypuPRY/BKEbDuzZa6LQk8VJu3wEbnOhRis2QY3lnayFULInP4Dun/Adb5J9MUomTMI1oL4KZ5driyHfokdUsZBLAJBUH+UhzducPe5w3n7iJSez0GVuPo79DsWc1glNNLa68ccjNSEhsNcWMiZ23eTATk19XZUXjGFcguean6DzlMLfHYj/0WPG3RAIfgpG0+Mwcj5bqkzYWKx3tTyXnTINR9yiev7uYsFiFiH4TsOtDuVQ5VRJ9LvNpURuHxf/17BATdR+nG/hcWxVirhMGaf9V2aoXLcgPIy+9ACsQO+m05qS8U062Tc4EZ8xAM630fCjxVeceW0jq9UNjRWiuuqOX/hUV16dYwZHE34a5YPpEZbWXM0lPf0mUK5G9AL1xnZqVPGVSgzOxIN1/zQc304kRFU8AOkHspwMdYSyBK3mGROvhJTz+MFAzN195KIGmuzMn+JaI+8qEqsy9fEyp8Gr5zmiTogE224UQ4+5PoOuItsw1z59t8hzA/8hdkRdf89b1AjffBIWGSGFHhbdb9XgcCyu6Ygyx7GxPjhfspIBgTFcQE5gSFGotqH+4TlW4o4MkOXcN2HKbO6oFxWU04kYMlZmKoDDrLJAdm94elNsfkDk6+jikzybGEVlAAMk7v1Yx11GS+dRPu0WnlwwzB5ZDUmRgBsjgsAqWNTkozVjhTad8Utdyzsst6E5Zhcn1Yn+Zy9lFkychAxwS9wpbQ00onraIZ15VWTqKfRRJqpRDPZcUq/169Q9To6qbThhaK5xg3QcI2jEH655Qf1p+r3tN9ECiXOLahtifeaKYIaSBccyitIKgE17JotH4Y33cqVdJaqkce3uFgjA3OWK+5bTLvYWXCE4wGAqrjZU927qWZ7gubYB1Yi4t7jIp7TCiFrwrzxD4x/znXYs5fDXSrXBiOXQxzQD1dSyHtl0M9b/yuPIEmBUPxuDdtKPUzNEnFl2MJf81YRnRfYWqRGurgnwJWW9AboEluGvW7AZmwnUk14A/a4tBVl+GMu9C0X9+l7b50Han+tRTVyJGBzhkza4ZUsRjENyrbYLUV8BRLv9v/BWk5Xn6iM/HUQg=
+        selected: false
+        status: Unchecked
+      - offset: 107
+        length: 27
+        placeholder_text: TODO("not implemented yet")
+        initial_state:
+          length: 27
+          offset: 107
+        initialized_from_dependency: false
+        encrypted_possible_answer: Lc+DRp0J2mY1hBV98skxpRWRH1+UQB3Aa/RHfMrbGoi+czHZNRMWTMzAopfaCcd6
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: src/Derangement.kt
+    visible: true
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Brute+Force+/+Generate+Derangements
+status: Unchecked
+record: -1

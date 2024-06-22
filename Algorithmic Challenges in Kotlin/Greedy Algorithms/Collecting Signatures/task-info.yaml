@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 100
+        length: 23
+        placeholder_text: // Write your code here
+        initial_state:
+          length: 23
+          offset: 100
+        initialized_from_dependency: false
+        encrypted_possible_answer: artbPw2tcJKQrPfxh9j+L2dXb0gu7vYekISIkC41KrBNx92jkiY2gu9/boiZxxP0ejpZJSXm68+sK50m2zytERHdxmN3S2TBWIctowj9gXv00iJyHtsHAndpB6/qSEZuiN4CciEV8l6KK33J60wfVS/rRGW7gLdANdTvOzPjKUaEW+FY1qtuToYmAw+0ZAomW2VYm0GTOqDR1xZtgFf2uropqkx/ZsOCPZWiJtvOLlWTfQ51wiR6/z1YzHG61feIeOn71CphgHjxBsHmdnHaHg==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Greedy+Algorithms+/+Collecting+Signatures
+status: Unchecked
+record: -1

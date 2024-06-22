@@ -1,0 +1,55 @@
+type: edu
+files:
+  - name: src/Task.kt
+    visible: true
+    placeholders:
+      - offset: 2
+        length: 57
+        placeholder_text: // Implement additional functions and classes if required
+        initial_state:
+          length: 57
+          offset: 2
+        initialized_from_dependency: false
+        encrypted_possible_answer: zVIUp0ik32db/coiaJzOIzXISL1cVPUI+9FQ8gEROBvVBsXiAmmEsys+MjKNVNjCOvUSp8JZLU67K6U3vtv45HkWAsWQM2BbA+zIVNU1x+U4q5DY5hWee/nJGU+wr5Lu1t9mxmoMpnHa6d5mT33A2Rmaf8BlKETwQezO4WhDdP6GLSM78qU/EoyaCU8KqJ4mT6RUM6Cs6p7lDgSPvVR5Q/QmWFClzXCBww6uOwFSvHDUlSiGW50Qqay1B30EPvflYLYpsdbHG2aM3Ygj3xi4pePXx11x/W6yWUCpi5TEawCuybSrJDPC9y69y1mMfDnhR7ORgMz8gRSEpYoyWiqcXu4tPj45zKgiW7rdJU9iBjOu0/rx4Ls4yZXf2uvv9CNXGc08BB4bM/kUah1KLsruS5ThgcVN850uYnNO4Uf9ZQFSmISEnskxe2G5SQ9X1d3JOR1yuWlVgoNBRnkCYbObcK5fP0bV+dRNiT1SGKSq5tUZTQQNnLvBPrdHLScufLW/IE1LIcn5aLhzlOad8CF3EQIaNtcHSjZKADAREzR9BbNgRi6yiSEBXVotAvpNXvqvc3m9WBLUlNIAN6+ejQNF3uhYDkWprMhMqCZn0V8mzX2ocUQ4htisXMSWXkSW7l71uFFKf/1DGrZIv6wLgxE1JDcp3EsRV9XfdtRv8DGqcGTlsYGd+sRKKhRGqNvhkJ+h/ho1VYzVDp/prc+zzeqWskx1GgaL+RBQM8DNrHpP/S0mAMFEL1jtXfwuAXlfFBh3MNZzXLQIf7tWY2cJRE5dJGdLXKyo1QIB51unAjlnBP6Y/3vsbtK5z9+8i6Hgiddr0IUFx+kxoPSCWpXGiQfHsN03hzXU8pGPvGS8xfeoCHywbpq0rR94pmZ4MxSW4K8JGTJgvDFiKJwLiVBu988AURZsg01lXXNYFnNoack/kdXQ4KfM3bU8n7+VTUVaKdm0Qm/eLgyRHXEc2Rfq/KP8eJ3w8/5k5iOEozBE5PVEk8HooKjLgHjDiao05Mg7OWBQPGSitkNZddZaEyvO2tnrc3HXb0RvAytiB0YjTQN7tJY=
+        selected: false
+        status: Unchecked
+      - offset: 115
+        length: 286
+        placeholder_text: |-
+          return if (n == 4) {
+                  listOf(
+                      Partition(listOf(1, 1, 1, 1)),
+                      Partition(listOf(1, 1, 2)),
+                      Partition(listOf(1, 3)),
+                      Partition(listOf(2, 2)),
+                      Partition(listOf(4)),
+                  )
+              } else {
+                  TODO("unimplemented")
+              }
+        initial_state:
+          length: 286
+          offset: 115
+        initialized_from_dependency: false
+        encrypted_possible_answer: LVByZY3pH48+9vGWRzK/pBXCmzWf0MRtHn0sO0IjPamJgz/9XrS2k1TlDMRtdkV2
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: test/Tests.kt
+    visible: true
+    learner_created: false
+  - name: src/Partition.kt
+    visible: true
+    learner_created: false
+  - name: test/HiddenTests.kt
+    visible: false
+    learner_created: false
+  - name: task_template.md
+    visible: false
+    learner_created: false
+  - name: solution.md
+    visible: false
+    learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSfxqHNk7ZtD9Br3NqgSlkdbaN6HuDWjJXvP3vFSIyFROZ6nYg/viewform?usp=pp_url&entry.2103429047=Brute+Force+/+Generate+Partitions
+status: Unchecked
+record: -1
