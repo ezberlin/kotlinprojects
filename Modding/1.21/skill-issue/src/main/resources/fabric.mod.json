@@ -3,12 +3,12 @@
 	"id": "skill-issue",
 	"version": "${version}",
 	"name": "Skill Issue",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod which decourages you to get into dangerous or bad situations",
+
 	"authors": [
-		"Me!"
+		"ezberlin"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
