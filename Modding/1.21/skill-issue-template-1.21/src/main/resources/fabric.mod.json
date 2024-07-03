@@ -1,0 +1,48 @@
+{
+	"schemaVersion": 1,
+	"id": "skill-issue",
+	"version": "${version}",
+	"name": "Skill Issue",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skill-issue/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "name.modid.SkillIssue",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "name.modid.SkillIssueClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"skill-issue.mixins.json",
+		{
+			"config": "skill-issue.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
