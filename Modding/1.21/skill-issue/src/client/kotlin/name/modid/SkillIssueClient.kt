@@ -1,43 +1,40 @@
 package name.modid
 
+import name.modid.IssueRenderer.Companion.highestPriorityIssueIndex
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback
-import net.minecraft.client.MinecraftClient
-import net.minecraft.client.gui.DrawContext
+import net.minecraft.client.network.ClientPlayerEntity
 import net.minecraft.item.Items
 
 class SkillIssueClient : ClientModInitializer {
 	override fun onInitializeClient() {
-		// Register tick event listener
+		val noTotemEquipped = Issue(
+			{ p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
+			0x60E8B50D,
+			15
+		)
+
+
+		val existingIssues = arrayOf(noTotemEquipped)
+		val presentIssues = mutableListOf<Issue>()
+
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
-			if (client.player != null) {
-				val player = client.player!!
-				// Check if the player does not have a totem in their offhand
-				renderScreenOverlay = // Render screen overlay
-					player.offHandStack.isEmpty || player.offHandStack.item != Items.TOTEM_OF_UNDYING
+			client.player?.let { player ->
+				presentIssues.clear()
+				existingIssues.filter { it.issue(player) }
+					.also { filteredIssues -> presentIssues.addAll(filteredIssues) }
+
+				highestPriorityIssueIndex = presentIssues.maxByOrNull { it.priority }?.let { issue ->
+					existingIssues.indexOf(issue)
+				}
 			}
 		})
 
-		// Register render callback
-		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, tickDelta ->
-			if (renderScreenOverlay) {
-				renderOverlay(matrixStack)
+		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, _ ->
+			if (highestPriorityIssueIndex != null && presentIssues.isNotEmpty()) {
+				IssueRenderer.renderOverlay(matrixStack, presentIssues[highestPriorityIssueIndex!!])
 			}
 		})
-	}
-
-	companion object {
-		var renderScreenOverlay = false
-
-		private fun renderOverlay(drawContext: DrawContext) {
-			val client = MinecraftClient.getInstance()
-			val window = client.window
-			val width = window.scaledWidth
-			val height = window.scaledHeight
-
-			// Cover the entire screen with a semi-transparent red rectangle
-			drawContext.fill(0, 0, width, height, 0x60FF0000)
-		}
 	}
 }
