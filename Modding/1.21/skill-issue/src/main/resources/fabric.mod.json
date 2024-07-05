@@ -3,14 +3,14 @@
 	"id": "skill-issue",
 	"version": "${version}",
 	"name": "Skill Issue",
-	"description": "A mod which discourages you to get into dangerous or bad situations",
+	"description": "A mod which discourages you to get into dangerous or bad situations by coloring your screen. \nIt detects low health, food level, not totem in offhand and no food in the hotbar.",
 
 	"authors": [
 		"ezberlin"
 	],
 
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/ezberlin/kotlinprojects/tree/main/Modding/1.21/skill-issue"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/skill-issue/skillissue.png",

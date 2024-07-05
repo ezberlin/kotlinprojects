@@ -24,16 +24,15 @@ class SkillIssueClient : ClientModInitializer {
 
 		val lowFood = Issue(
 			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
-
 			0x60492100,
 			10
 		)
 
 		val noFood = Issue(
 			{ p: ClientPlayerEntity ->
-				var food = false
-				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) food = true
-				food},
+				var nofood = true
+				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
+				nofood},
 
 			0x60492100,
 			12
