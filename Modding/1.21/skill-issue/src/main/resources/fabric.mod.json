@@ -3,11 +3,12 @@
 	"id": "skill-issue",
 	"version": "${version}",
 	"name": "Skill Issue",
-	"description": "A mod which decourages you to get into dangerous or bad situations",
+	"description": "A mod which discourages you to get into dangerous or bad situations",
 
 	"authors": [
 		"ezberlin"
 	],
+
 	"contact": {
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
