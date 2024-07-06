@@ -6,17 +6,18 @@ import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 
-class ConfigManager(private val configPath: String) {
+object ConfigManager {
+    private const val CONFIGPATH = "siconfig.json"
     private val gson = Gson()
 
     fun saveConfig(issues: Array<Issue>) {
         val issueStates = issues.associate { it.name to it.enabled }
         val json = gson.toJson(issueStates)
-        Files.write(Paths.get(configPath), json.toByteArray())
+        Files.write(Paths.get(CONFIGPATH), json.toByteArray())
     }
 
     fun loadConfig(issues: Array<Issue>) {
-        val file = File(configPath)
+        val file = File(CONFIGPATH)
         if (!file.exists()) return
 
         val type = object : TypeToken<Map<String, Boolean>>() {}.type

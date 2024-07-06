@@ -14,75 +14,71 @@ import org.lwjgl.glfw.GLFW
 class SkillIssueClient : ClientModInitializer {
 
 	private lateinit var toggleIssuesKeyBinding: KeyBinding
+	private val existingIssues = initializeIssues()
 
-	override fun onInitializeClient() {
-		val noTotemEquipped = Issue(
-			"No Totem Equipped",
+	private fun initializeIssues() = arrayOf(
+		Issue("No totem equipped",
 			{ p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
 			0x60E8B50D,
 			15,
-			false
-		)
+			false),
 
-		val lowHealth = Issue(
-			"Low Health",
+		Issue("Low health",
 			{ p: ClientPlayerEntity -> p.health <= 8 },
 			0x60820C01,
 			20,
-			true
-		)
+			true),
 
-		val lowHunger = Issue(
-			"Low Hunger",
-			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
-			0x60492100,
-			10,
-			true
-		)
-
-		val noFood = Issue(
-			"No food in hotbar",
+		Issue("No food in hotbar",
 			{ p: ClientPlayerEntity ->
 				var nofood = true
 				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
 				nofood},
 			0x60492100,
 			12,
-			true
-		)
+			false),
 
-		val existingIssues = arrayOf(noTotemEquipped, lowHealth, lowHunger, noFood)
-		val presentIssues = mutableListOf<Issue>()
-		val configManager = ConfigManager("siconfig.json")
-		configManager.loadConfig(existingIssues)
+		Issue("Low hunger",
+			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
+			0x60492100,
+			10,
+			true))
 
-		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
-			client.player?.let { player ->
-				presentIssues.clear()
-				existingIssues.filter { it.issue(player) && it.enabled }
-					.also { filteredIssues -> presentIssues.addAll(filteredIssues) }
-				IssueRenderer.highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
-			}
-
-			if (toggleIssuesKeyBinding.wasPressed()) {
-				client.setScreen(IssueToggleScreen(existingIssues))
-			}
-
-		})
-
-		toggleIssuesKeyBinding = KeyBinding(
-			"key.modid.toggleIssues",
-			InputUtil.Type.KEYSYM,
-			GLFW.GLFW_KEY_H,
-			"category.modid.issues"
-		)
-		KeyBindingHelper.registerKeyBinding(toggleIssuesKeyBinding)
-
-
+	private fun setupHudRenderCallback() {
 		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, _ ->
 			IssueRenderer.highestPriorityIssue?.let { issue ->
 				IssueRenderer.renderOverlay(matrixStack, issue)
 			}
 		})
+	}
+
+	private fun setupKeyBinding() {
+		toggleIssuesKeyBinding = KeyBinding(
+			"key.modid.toggleIssues",
+			InputUtil.Type.KEYSYM,
+			GLFW.GLFW_KEY_H,
+			"category.modid.issues"
+		).also { KeyBindingHelper.registerKeyBinding(it) }
+	}
+
+	private fun setupClientTickEvent() {
+		val presentIssues = mutableListOf<Issue>()
+		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
+			client.player?.let { player ->
+				presentIssues.clear()
+				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
+				IssueRenderer.highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
+			}
+			if (toggleIssuesKeyBinding.wasPressed()) {
+				client.setScreen(IssueToggleScreen(existingIssues))
+			}
+		})
+	}
+
+	override fun onInitializeClient() {
+		ConfigManager.loadConfig(existingIssues)
+		setupClientTickEvent()
+		setupKeyBinding()
+		setupHudRenderCallback()
 	}
 }
