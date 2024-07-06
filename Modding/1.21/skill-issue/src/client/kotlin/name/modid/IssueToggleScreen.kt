@@ -7,24 +7,24 @@ import net.minecraft.text.Text
 
 class IssueToggleScreen(existingIssues: Array<Issue>) : Screen(Text.literal("Toggle Issues")) {
     init {
-        var y = 20
+        var y = 36
         existingIssues.forEachIndexed { _, issue ->
             val button = ButtonWidget.builder(
-                Text.of("${if (issue.enabled) "Disable" else "Enable"} ${issue.name}")
+                Text.of("${issue.name}: ${if (issue.enabled) "Enabled" else "Disabled"} ")
             ) { btn ->
                 issue.enabled = !issue.enabled
-                btn.message =
-                    Text.of("${if (issue.enabled) "Disable" else "Enable"} ${issue.name}")
-            }.dimensions(20, y, 150, 20).build()
+                ConfigManager("siconfig.json").saveConfig(existingIssues)
+                btn.message = Text.of("${issue.name}: ${if (issue.enabled) "Enabled" else "Disabled"} ")
+            }.dimensions(20, y, 250, 20).build()
 
             addDrawableChild(button)
-            y += 48
+            y += 24
         }
     }
 
     override fun render(context: DrawContext?, mouseX: Int, mouseY: Int, delta: Float) {
-        renderBackground(context, mouseX, mouseY, delta) // Render the default background
-        super.render(context, mouseX, mouseY, delta) // Render buttons and other elements
+        renderBackground(context, mouseX, mouseY, delta)
+        super.render(context, mouseX, mouseY, delta)
 
         val textWidth = textRenderer.getWidth(title)
         // Calculate the center position

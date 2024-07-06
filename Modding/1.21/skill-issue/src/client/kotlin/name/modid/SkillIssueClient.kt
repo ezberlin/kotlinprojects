@@ -53,6 +53,8 @@ class SkillIssueClient : ClientModInitializer {
 
 		val existingIssues = arrayOf(noTotemEquipped, lowHealth, lowHunger, noFood)
 		val presentIssues = mutableListOf<Issue>()
+		val configManager = ConfigManager("siconfig.json")
+		configManager.loadConfig(existingIssues)
 
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
 			client.player?.let { player ->
