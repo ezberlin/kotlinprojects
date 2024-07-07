@@ -4,11 +4,18 @@ import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback
+import net.minecraft.client.MinecraftClient
+import net.minecraft.client.gui.screen.DisconnectedScreen
+import net.minecraft.client.gui.screen.TitleScreen
+import net.minecraft.client.gui.screen.multiplayer.MultiplayerScreen
 import net.minecraft.client.network.ClientPlayerEntity
 import net.minecraft.client.option.KeyBinding
 import net.minecraft.client.util.InputUtil
 import net.minecraft.component.DataComponentTypes
+import net.minecraft.entity.effect.StatusEffects
+import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
+import net.minecraft.text.Text
 import org.lwjgl.glfw.GLFW
 
 class SkillIssueClient : ClientModInitializer {
@@ -17,32 +24,62 @@ class SkillIssueClient : ClientModInitializer {
 	private val existingIssues = initializeIssues()
 
 	private fun initializeIssues() = arrayOf(
-		Issue("No totem equipped",
-			{ p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
-			0x60E8B50D,
-			15,
-			false),
+		Issue("Undefended in lava",
+			{p: ClientPlayerEntity ->
+				var noFireRes = true
+				if (p.inventory.contains(ItemStack(Items.TOTEM_OF_UNDYING)) ||
+					p.inventory.contains(ItemStack(Items.ENCHANTED_GOLDEN_APPLE))) {
+					noFireRes = false
+				}
+				if (p.hasStatusEffect(StatusEffects.FIRE_RESISTANCE)) {
+					noFireRes = false
+				}
+				p.isInLava && noFireRes},
+			100,
+			true,
+			action = {c: MinecraftClient, i: Issue ->
+				val coords = c.player?.pos.toString()
+				i.enabled = false
+				c.world?.disconnect()
+				c.disconnect()
+				c.setScreen(DisconnectedScreen(
+					MultiplayerScreen(TitleScreen()),
+					Text.of("You fell undefended in lava and were logged of by Skill Issue!"),
+					Text.of("Your coordinates are: $coords")
+				))}),
 
 		Issue("Low health",
-			{ p: ClientPlayerEntity -> p.health <= 8 },
-			0x60820C01,
+			{p: ClientPlayerEntity -> p.health <= 8 },
 			20,
-			true),
+			true,
+			0x60820C01),
+
+		Issue("No totem equipped",
+			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
+			15,
+			false,
+			0x60E8B50D),
+
+		Issue("No shield equipped",
+			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.SHIELD },
+			13,
+			false,
+			0x60E8B50D),
 
 		Issue("No food in hotbar",
-			{ p: ClientPlayerEntity ->
+			{p: ClientPlayerEntity ->
 				var nofood = true
 				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
 				nofood},
-			0x60492100,
 			12,
-			false),
+			false,
+			0x60492100),
 
 		Issue("Low hunger",
 			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
-			0x60492100,
 			10,
-			true))
+			true,
+			0x60492100))
 
 	private fun setupHudRenderCallback() {
 		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, _ ->
@@ -63,11 +100,17 @@ class SkillIssueClient : ClientModInitializer {
 
 	private fun setupClientTickEvent() {
 		val presentIssues = mutableListOf<Issue>()
+		var highestPriorityIssue : Issue?
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
 			client.player?.let { player ->
 				presentIssues.clear()
 				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
-				IssueRenderer.highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
+				highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
+				if (highestPriorityIssue?.action == null) {
+					IssueRenderer.highestPriorityIssue = highestPriorityIssue
+				} else {
+					highestPriorityIssue?.action?.let { it(MinecraftClient.getInstance(), highestPriorityIssue!!) }
+				}
 			}
 			if (toggleIssuesKeyBinding.wasPressed()) {
 				client.setScreen(IssueToggleScreen(existingIssues))
