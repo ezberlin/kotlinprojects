@@ -13,8 +13,7 @@ class IssueRenderer {
             val window = client.window
             val width = window.scaledWidth
             val height = window.scaledHeight
-
-            drawContext.fill(0, 0, width, height, color!!)
+            if (color != null) drawContext.fill(0, 0, width, height, color!!)
         }
     }
 }

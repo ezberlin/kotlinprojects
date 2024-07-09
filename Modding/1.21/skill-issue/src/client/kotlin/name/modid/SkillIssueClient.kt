@@ -101,6 +101,7 @@ class SkillIssueClient : ClientModInitializer {
 		val presentIssues = mutableListOf<Issue>()
 		var highestPriorityIssue : Issue?
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
+			IssueRenderer.color = null
 			client.player?.let { player ->
 				presentIssues.clear()
 				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
