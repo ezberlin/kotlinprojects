@@ -35,9 +35,7 @@ class SkillIssueClient : ClientModInitializer {
 					noFireRes = false
 				}
 				p.isInLava && noFireRes},
-			100,
-			true,
-			action = {c: MinecraftClient, i: Issue ->
+			{ c: MinecraftClient, i: Issue ->
 				val coords = c.player?.pos.toString()
 				i.enabled = false
 				c.world?.disconnect()
@@ -46,46 +44,47 @@ class SkillIssueClient : ClientModInitializer {
 					MultiplayerScreen(TitleScreen()),
 					Text.of("You fell undefended in lava and were logged of by Skill Issue!"),
 					Text.of("Your coordinates are: $coords")
-				))}),
+				))},
+			100,
+			true,
+			),
 
 		Issue("Low health",
 			{p: ClientPlayerEntity -> p.health <= 8 },
+			{_, _ -> IssueRenderer.color = 0x60820C01},
 			20,
-			true,
-			0x60820C01),
+			true),
 
 		Issue("No totem equipped",
 			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
+			{_, _ -> IssueRenderer.color = 0x60E8B50D},
 			15,
-			false,
-			0x60E8B50D),
+			false),
 
 		Issue("No shield equipped",
 			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.SHIELD },
+			{_, _ -> IssueRenderer.color = 0x6068412b},
 			13,
-			false,
-			0x60E8B50D),
+			false),
 
 		Issue("No food in hotbar",
 			{p: ClientPlayerEntity ->
 				var nofood = true
 				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
 				nofood},
+			{_, _ -> IssueRenderer.color = 0x60492100},
 			12,
-			false,
-			0x60492100),
+			false),
 
 		Issue("Low hunger",
 			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
+			{_, _ -> IssueRenderer.color = 0x60492100},
 			10,
-			true,
-			0x60492100))
+			true))
 
 	private fun setupHudRenderCallback() {
 		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, _ ->
-			IssueRenderer.highestPriorityIssue?.let { issue ->
-				IssueRenderer.renderOverlay(matrixStack, issue)
-			}
+			IssueRenderer.renderOverlay(matrixStack)
 		})
 	}
 
@@ -106,11 +105,7 @@ class SkillIssueClient : ClientModInitializer {
 				presentIssues.clear()
 				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
 				highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
-				if (highestPriorityIssue?.action == null) {
-					IssueRenderer.highestPriorityIssue = highestPriorityIssue
-				} else {
-					highestPriorityIssue?.action?.let { it(MinecraftClient.getInstance(), highestPriorityIssue!!) }
-				}
+				highestPriorityIssue?.action?.let { it(MinecraftClient.getInstance(), highestPriorityIssue!!) }
 			}
 			if (toggleIssuesKeyBinding.wasPressed()) {
 				client.setScreen(IssueToggleScreen(existingIssues))
