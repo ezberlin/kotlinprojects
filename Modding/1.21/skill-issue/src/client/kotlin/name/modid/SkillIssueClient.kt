@@ -25,6 +25,7 @@ class SkillIssueClient : ClientModInitializer {
 
 	private fun initializeIssues() = arrayOf(
 		Issue("Undefended in lava",
+			Items.LAVA_BUCKET.defaultStack,
 			{p: ClientPlayerEntity ->
 				var noFireRes = true
 				if (p.inventory.contains(ItemStack(Items.TOTEM_OF_UNDYING)) ||
@@ -45,29 +46,51 @@ class SkillIssueClient : ClientModInitializer {
 					Text.of("You fell undefended in lava and were logged of by Skill Issue!"),
 					Text.of("Your coordinates are: $coords")
 				))},
-			100,
+			120,
 			true,
 			),
 
+		Issue("Falling dangerously high",
+			Items.LEATHER_BOOTS.defaultStack,
+			{p: ClientPlayerEntity ->
+				p.velocity.y < -1.6},
+			{ c: MinecraftClient, i: Issue ->
+				val coords = c.player?.pos.toString()
+				i.enabled = false
+				c.world?.disconnect()
+				c.disconnect()
+				c.setScreen(DisconnectedScreen(
+					MultiplayerScreen(TitleScreen()),
+					Text.of("You fell from a dangerously high place and were logged of by Skill Issue!"),
+					Text.of("Your coordinates are: $coords")
+				))},
+			110,
+			true,
+		),
+
 		Issue("Low health",
+			Items.POPPY.defaultStack,
 			{p: ClientPlayerEntity -> p.health <= 8 },
 			{_, _ -> IssueRenderer.color = 0x60820C01},
 			20,
 			true),
 
 		Issue("No totem equipped",
+			Items.TOTEM_OF_UNDYING.defaultStack,
 			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.TOTEM_OF_UNDYING },
 			{_, _ -> IssueRenderer.color = 0x60E8B50D},
 			15,
 			false),
 
 		Issue("No shield equipped",
+			Items.SHIELD.defaultStack,
 			{p: ClientPlayerEntity -> p.offHandStack.isEmpty || p.offHandStack.item != Items.SHIELD },
 			{_, _ -> IssueRenderer.color = 0x6068412b},
 			13,
 			false),
 
 		Issue("No food in hotbar",
+			Items.GOLDEN_CARROT.defaultStack,
 			{p: ClientPlayerEntity ->
 				var nofood = true
 				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
@@ -77,12 +100,14 @@ class SkillIssueClient : ClientModInitializer {
 			false),
 
 		Issue("Low hunger",
+			Items.BEEF.defaultStack,
 			{ p: ClientPlayerEntity -> p.hungerManager.foodLevel <= 8 },
 			{_, _ -> IssueRenderer.color = 0x60492100},
 			10,
 			true))
 
 	private fun setupHudRenderCallback() {
+
 		HudRenderCallback.EVENT.register(HudRenderCallback { matrixStack, _ ->
 			IssueRenderer.renderOverlay(matrixStack)
 		})
@@ -103,13 +128,14 @@ class SkillIssueClient : ClientModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
 			IssueRenderer.color = null
 			client.player?.let { player ->
+				println(player.velocity.y)
 				presentIssues.clear()
 				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
 				highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
 				highestPriorityIssue?.action?.let { it(MinecraftClient.getInstance(), highestPriorityIssue!!) }
 			}
 			if (toggleIssuesKeyBinding.wasPressed()) {
-				client.setScreen(IssueToggleScreen(existingIssues))
+				client.setScreen(IssueToggleScreen(existingIssues, presentIssues.toTypedArray()))
 			}
 		})
 	}
