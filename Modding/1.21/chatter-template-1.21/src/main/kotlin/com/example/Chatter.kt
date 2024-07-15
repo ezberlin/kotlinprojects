@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking
 import net.minecraft.client.MinecraftClient
+import net.minecraft.network.packet.CustomPayload
 import net.minecraft.network.packet.s2c.play.GameMessageS2CPacket
 import net.minecraft.text.Text
 import java.io.BufferedWriter
@@ -43,7 +44,7 @@ class ChatLoggerMod : ClientModInitializer {
         })
 
         // Register a global receiver for the chat message packet
-        ClientPlayNetworking.registerGlobalReceiver<GameMessageS2CPacket>(GameMessageS2CPacket.ID) { packet, context ->
+        ClientPlayNetworking.registerGlobalReceiver<CustomPayload>(GameMessageS2CPacket) { packet, context ->
             // Use reflection to access the getMessage method
             val getMessageMethod = GameMessageS2CPacket::class.java.getDeclaredMethod("getMessage")
             getMessageMethod.isAccessible = true

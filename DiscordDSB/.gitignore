@@ -41,4 +41,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-Logins.kt
+src/main/kotlin/Logins.kt
