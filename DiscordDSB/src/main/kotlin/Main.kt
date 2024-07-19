@@ -1,7 +1,7 @@
 package org.example
 
 
-val discord = DiscordHandler(Logins.DCTOKEN, Logins.GUILDID)
+val discord = DiscordHandler(Logins.DCTOKEN)
 val dsb = APIHandler(Logins.USERNAME, Logins.PASSWORD, arrayOf("Vtr-Nr.", "Neu", "Klassen", "Stunden", "Art", "Fach", "Raum", "(Fach)", "(Raum)", "Text", "Vtr.-Text-2"))
 val validClasses = arrayOf(
     "5N",   "6N",  "7N",
@@ -25,7 +25,7 @@ fun getClassEntries(classreq: String): String {
     }
 
     if (classEntries.isEmpty()) {
-        return "No entries found for class '$classreq'."
+        return "Es gibt keine Einträge für '$classreq'."
     }
 
     val formattedEntries = classEntries.joinToString("\n") { entry ->
@@ -41,4 +41,9 @@ fun getClassEntries(classreq: String): String {
     }
 
     return formattedEntries
+}
+
+fun getFullUrl(): String? {
+    dsb.fetchTimetable()
+    return dsb.tableURL
 }

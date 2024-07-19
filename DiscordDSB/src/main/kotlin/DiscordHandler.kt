@@ -11,32 +11,45 @@ import dev.kord.gateway.Intent
 import dev.kord.gateway.PrivilegedIntent
 import dev.kord.rest.builder.interaction.string
 
-class DiscordHandler (private val token: String, private val guildId: Snowflake){
+class DiscordHandler (private val token: String){
     suspend fun bot() {
         val kord = Kord(token)
 
         kord.on<ReadyEvent> {
             kord.createGlobalChatInputCommand(
-                "plan",
-                "Returns plan for the class"
+                "vert",
+                "Vertretungen für deine Klasse!"
             ) {
-                string("class", "Your class") {
+                string("klasse", "Deine Klasse") {
                     required = true
                 }
             }
+
+            kord.createGlobalChatInputCommand(
+                "plan",
+                "Ein Link zu einem vollen Vertretungsplan!"
+            )
         }
 
         kord.on<ChatInputCommandInteractionCreateEvent> {
             val command = interaction.command
-            val output: String
+            var output: String
 
-            if (command.rootName == "plan") {
-                val classreq = command.options["class"]?.value?.toString()
+            if (command.rootName == "vert") {
+                val classreq = command.options["klasse"]?.value?.toString()
                 output = if (classreq != null && validClasses.contains(classreq)) {
                     getClassEntries(classreq)
                 } else {
                     "Leider scheint diese Klasse nicht zu existieren!"
                 }
+
+                interaction.respondPublic {
+                    content = output
+                }
+            }
+
+            if (command.rootName == "plan") {
+                output = getFullUrl() ?: "Der Vertretungsplan ist zurzeit leider nicht verfügbar!"
 
                 interaction.respondPublic {
                     content = output

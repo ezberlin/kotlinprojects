@@ -26,7 +26,7 @@ class APIHandler(username: String, password: String, private val tablemapper: Ar
     private val device = "SM-G930F"
     private val bundleId = "de.heinekingmedia.dsbmobile"
     private val dataURL = "https://app.dsbcontrol.de/JsonHandler.ashx/GetData"
-    private var tableURL : String? = null
+    var tableURL : String? = null
 
     private var classIndex: Int? = null
     init {
@@ -64,7 +64,7 @@ class APIHandler(username: String, password: String, private val tablemapper: Ar
             val resultMenuItems = json.getAsJsonArray("ResultMenuItems")
             val firstItem = resultMenuItems.get(0).asJsonObject
             val childs = firstItem.getAsJsonArray("Childs")
-            val root = childs.get(1).asJsonObject.getAsJsonObject("Root")
+            val root = childs.get(childs.size() - 1).asJsonObject.getAsJsonObject("Root")
             val childChilds = root.getAsJsonArray("Childs").get(0).asJsonObject.getAsJsonArray("Childs")
             val detail = childChilds.get(0).asJsonObject.get("Detail")
             return detail.asString
@@ -110,7 +110,6 @@ class APIHandler(username: String, password: String, private val tablemapper: Ar
             }
             val data = Gson().fromJson(String(dataDecompressed), JsonObject::class.java)
             tableURL = extractUrlFromJson(data)
-            println(tableURL)
         }
     }
 
