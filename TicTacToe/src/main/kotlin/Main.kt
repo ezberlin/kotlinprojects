@@ -9,16 +9,19 @@ fun main() {
     while (true) {
         board.renderBoard()
         collectMove("X", board)
-        clearConsole()
-        if (board.checkForWinner() != 0) break
+        if (board.checkForWinner() != 0 || board.checkForDraw()) break
         board.renderBoard()
         collectMove("O", board)
-        clearConsole()
-        if (board.checkForWinner() != 0) break
+        if (board.checkForWinner() != 0 || board.checkForDraw()) break
 
     }
+
     board.renderBoard()
-    if (board.checkForWinner() == 1) println("X wins!") else println("O wins!")
+    if (board.checkForWinner() == 1) {
+        println("X wins!")
+    } else if (board.checkForWinner() == 2) {
+        println("O wins!")
+    } else println("Draw!")
 }
 
 fun collectMove(player: String, board: Board) {
@@ -38,8 +41,4 @@ fun collectMove(player: String, board: Board) {
             println("You should enter numbers!")
         }
     }
-}
-
-fun clearConsole() {
-    print("\u001B[2J\u001B[;H")
 }

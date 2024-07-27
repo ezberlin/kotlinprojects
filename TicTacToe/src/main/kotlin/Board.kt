@@ -52,4 +52,11 @@ class Board (val spaces : Array<Space>) {
         }
         return 0
     }
+
+    fun checkForDraw(): Boolean {
+        for (space in spaces) {
+            if (space.value == 0) return false
+        }
+        return true
+    }
 }
