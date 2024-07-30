@@ -1,6 +1,5 @@
 package org.example
 
-import dev.kord.common.entity.Snowflake
 import dev.kord.core.Kord
 import dev.kord.core.behavior.interaction.respondPublic
 import dev.kord.core.event.gateway.ReadyEvent

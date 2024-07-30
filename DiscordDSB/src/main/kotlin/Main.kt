@@ -5,10 +5,10 @@ val discord = DiscordHandler(Logins.DCTOKEN)
 val dsb = APIHandler(Logins.USERNAME, Logins.PASSWORD, arrayOf("Vtr-Nr.", "Neu", "Klassen", "Stunden", "Art", "Fach", "Raum", "(Fach)", "(Raum)", "Text", "Vtr.-Text-2"))
 val validClasses = arrayOf(
     "5N",   "6N",  "7N",
-    "7A",   "7B",  "7C",
-    "8N",   "8A",  "8B",
+    "7A",   "7B",  "8N",
+    "8A",   "8B",  "8C",
     "9N",   "9A",  "9B",
-    "10XN", "10A", "10B",
+    "10N",  "10A", "10B",
     "11w",  "12w", "WiKo")
 
 suspend fun main() {

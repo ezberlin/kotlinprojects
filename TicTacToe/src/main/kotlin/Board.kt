@@ -10,7 +10,7 @@ class Board (val spaces : Array<Space>) {
             "-----+-----+-----",
             "  ${spaces[6].content}  |  ${spaces[7].content}  |  ${spaces[8].content}")
         for (line in lines) {
-            println(line)
+            putString(terminal, line)
         }
     }
 
