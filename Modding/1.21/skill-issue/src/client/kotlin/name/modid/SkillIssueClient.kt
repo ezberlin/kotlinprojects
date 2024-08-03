@@ -92,9 +92,9 @@ class SkillIssueClient : ClientModInitializer {
 		Issue("No food in hotbar",
 			Items.GOLDEN_CARROT.defaultStack,
 			{p: ClientPlayerEntity ->
-				var nofood = true
-				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) nofood = false
-				nofood},
+				var noFood = true
+				for (i in 0..8) if (p.inventory.getStack(i).get(DataComponentTypes.FOOD) != null) noFood = false
+				noFood},
 			{_, _ -> IssueRenderer.color = 0x60492100},
 			12,
 			false),
@@ -128,7 +128,6 @@ class SkillIssueClient : ClientModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(ClientTickEvents.EndTick { client ->
 			IssueRenderer.color = null
 			client.player?.let { player ->
-				println(player.velocity.y)
 				presentIssues.clear()
 				existingIssues.filterTo(presentIssues) { it.issue(player) && it.enabled }
 				highestPriorityIssue = presentIssues.maxByOrNull { it.priority }
