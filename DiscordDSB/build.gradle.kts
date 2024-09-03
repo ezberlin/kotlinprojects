@@ -1,6 +1,14 @@
+import org.gradle.jvm.tasks.Jar
+
 plugins {
     kotlin("jvm") version "2.0.0"
+    application
 }
+
+application {
+    mainClass.set("org.example.MainKt")
+}
+
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
@@ -23,4 +31,12 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(21)
+}
+
+tasks.withType<Jar> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE // or use DuplicatesStrategy.WARN
+    manifest {
+        attributes["Main-Class"] = "org.example.MainKt"
+    }
+    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 }
