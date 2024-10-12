@@ -1,0 +1,64 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.286 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=jvm nativeTarget=null
+00:01.297 DEBUG :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    INC: state file is missing or empty at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_resolveDependenciesJvm-c34ccb01b4' -> rebuilding
+00:01.298 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    building ':ampertest:resolveDependenciesJvm'
+00:01.829 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:01.915 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:02.188 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:02.397 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:02.658 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:02.847 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:02.871 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha512
+00:02.989 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:03.012 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:03.065 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:03.104 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha1 for the dependency org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+00:03.130 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom for the dependency org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+00:03.152 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.198 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:03.249 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.pom.sha256
+00:03.293 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.315 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.372 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.398 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.495 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.545 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha512
+00:03.545 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.601 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.624 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.626 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha1 for the dependency org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+00:03.656 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module for the dependency org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+00:03.767 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.786 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:03.819 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.module.sha256
+00:03.909 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:03.931 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:03.986 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:04.107 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.141 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:04.200 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha512
+00:04.262 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.286 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.344 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.367 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha1 for the dependency org.jetbrains:annotations:13.0
+00:04.389 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom for the dependency org.jetbrains:annotations:13.0
+00:04.492 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.548 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.pom.sha256
+00:04.751 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha512
+00:04.766 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar for the dependency org.jetbrains.kotlin:kotlin-stdlib:2.0.0
+00:04.898 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha512
+00:04.956 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha512
+00:05.066 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha256
+00:05.216 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha256
+00:05.271 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha256
+00:05.293 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar.sha1 for the dependency org.jetbrains:annotations:13.0
+00:05.317 DEBUG :ampertest:resolveDependenciesJvm DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar for the dependency org.jetbrains:annotations:13.0
+00:05.319 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    finished ':ampertest:resolveDependenciesJvm' in 4.014664334s
+00:05.336 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=JVM nativeTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com https://maven.pkg.jetbrains.space/public/p/compose/dev resolved to:
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+00:05.338 DEBUG :ampertest:compileJvm     JvmCompileTask            compile ampertest -- jvm
+00:05.345 INFO  :ampertest:compileJvm     Downloader                Downloading https://corretto.aws/downloads/resources/21.0.1.12.1/amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz to /Users/ismail/Library/Caches/Amper/download.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz

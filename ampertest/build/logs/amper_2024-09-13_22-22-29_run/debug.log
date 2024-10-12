@@ -1,0 +1,12 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.249 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=jvm nativeTarget=null
+00:01.276 DEBUG :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    INC: up-to-date according to state file at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_resolveDependenciesJvm-c34ccb01b4' in 15.215250ms
+00:01.276 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.286 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=JVM nativeTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com https://maven.pkg.jetbrains.space/public/p/compose/dev resolved to:
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+00:01.291 DEBUG :ampertest:compileJvm     JvmCompileTask            compile ampertest -- jvm
+00:01.298 INFO  :ampertest:compileJvm     Downloader                Downloading https://corretto.aws/downloads/resources/21.0.1.12.1/amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz to /Users/ismail/Library/Caches/Amper/download.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz

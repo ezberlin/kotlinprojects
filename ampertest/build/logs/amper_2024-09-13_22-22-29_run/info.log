@@ -1,0 +1,5 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.276 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.298 INFO  :ampertest:compileJvm     Downloader                Downloading https://corretto.aws/downloads/resources/21.0.1.12.1/amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz to /Users/ismail/Library/Caches/Amper/download.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz

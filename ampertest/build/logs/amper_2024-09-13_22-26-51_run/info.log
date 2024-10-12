@@ -1,0 +1,16 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.340 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.392 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    building ':ampertest:compileJvm'
+00:01.410 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    building 'resolve-org.jetbrains.kotlin-kotlin-build-tools-impl-2.0.0'
+00:05.321 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    finished 'resolve-org.jetbrains.kotlin-kotlin-build-tools-impl-2.0.0' in 3.905421500s
+00:05.380 INFO  :ampertest:compileJvm     KotlinBuildToolsApiKt     i: [-Xjdk-release=17, -jdk-home, /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d/Contents/Home, -classpath, /Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar:/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar, -no-stdlib, -language-version, 1.9, -api-version, 1.9, -d, /Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm]
+00:07.018 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    finished ':ampertest:compileJvm' in 5.614657542s
+00:07.029 INFO  :ampertest:jarJvm         ExecuteOnChangedInputs    building ':ampertest:jarJvm'
+00:07.036 INFO  :ampertest:jarJvm         ExecuteOnChangedInputs    finished ':ampertest:jarJvm' in 2.742792ms
+00:09.326 INFO  :ampertest:runJvm         JvmRunTask                Process exited with exit code 0
+STDOUT:
+Hiii
+
+

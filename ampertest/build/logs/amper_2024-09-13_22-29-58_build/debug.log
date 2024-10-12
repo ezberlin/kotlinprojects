@@ -1,0 +1,149 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.374 INFO                            AmperBackend              Selected tasks to compile: :ampertest:compileJvm :ampertest:compileJvmTest
+00:01.393 DEBUG :ampertest:resolveDependenciesJvmTest ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm jvmTest --  -- resolvePlatform=jvm nativeTarget=null
+00:01.394 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=jvm nativeTarget=null
+00:01.408 DEBUG :ampertest:resolveDependenciesJvmTest ExecuteOnChangedInputs    INC: state file is missing or empty at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_resolveDependenciesJvmTest-8feb576ca3' -> rebuilding
+00:01.409 INFO  :ampertest:resolveDependenciesJvmTest ExecuteOnChangedInputs    building ':ampertest:resolveDependenciesJvmTest'
+00:01.428 DEBUG :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    INC: up-to-date according to state file at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_resolveDependenciesJvm-c34ccb01b4' in 18.941875ms
+00:01.431 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.449 DEBUG :ampertest:resolveDependenciesJvm ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm --  -- resolvePlatform=JVM nativeTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com https://maven.pkg.jetbrains.space/public/p/compose/dev resolved to:
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+00:01.462 DEBUG :ampertest:compileJvm     JvmCompileTask            compile ampertest -- jvm
+00:01.482 DEBUG :ampertest:compileJvm     ExtractKt                 Skipping extract to /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d since flag file /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d.flag is correct
+00:01.489 DEBUG :ampertest:compileJvm     ExecuteOnChangedInputs    INC: up-to-date according to state file at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_compileJvm-86f20f4805' in 2.317ms
+00:01.489 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    ':ampertest:compileJvm' is up-to-date
+00:01.961 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:02.039 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:02.354 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:02.562 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:02.822 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:02.974 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.098 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha512
+00:03.140 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.166 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.228 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.284 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha1 for the dependency org.jetbrains.kotlin:kotlin-test-junit:2.0.0
+00:03.310 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom for the dependency org.jetbrains.kotlin:kotlin-test-junit:2.0.0
+00:03.379 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.437 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.pom.sha256
+00:03.439 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.595 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.618 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.678 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.819 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:03.821 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.886 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha512
+00:03.981 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:04.005 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:04.064 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:04.090 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha1 for the dependency org.jetbrains.kotlin:kotlin-test-junit:2.0.0
+00:04.114 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module for the dependency org.jetbrains.kotlin:kotlin-test-junit:2.0.0
+00:04.213 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:04.248 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.278 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.module.sha256
+00:04.340 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.361 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.401 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.428 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.490 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.525 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.623 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:04.639 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.666 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.690 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha512
+00:04.719 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.756 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:04.772 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.pom.sha512
+00:04.778 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:04.839 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:04.855 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:04.863 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha1 for the dependency org.jetbrains.kotlin:kotlin-test:2.0.0
+00:04.882 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:04.892 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom for the dependency org.jetbrains.kotlin:kotlin-test:2.0.0
+00:04.973 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:05.032 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.pom.sha256
+00:05.037 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:05.058 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.080 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.175 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:05.208 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.232 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:05.258 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom.sha1 for the dependency junit:junit:4.13.2
+00:05.286 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.pom.sha256
+00:05.287 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom for the dependency junit:junit:4.13.2
+00:05.372 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.428 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.449 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.449 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.503 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha512
+00:05.586 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:05.596 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.609 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:05.752 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.756 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:05.814 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.871 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha512
+00:05.908 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:05.929 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:05.949 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:05.965 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:05.990 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha1 for the dependency org.jetbrains.kotlin:kotlin-test:2.0.0
+00:06.019 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module for the dependency org.jetbrains.kotlin:kotlin-test:2.0.0
+00:06.020 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.module.sha256
+00:06.091 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:06.237 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:06.300 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:06.326 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha1 for the dependency org.hamcrest:hamcrest-core:1.3
+00:06.355 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom for the dependency org.hamcrest:hamcrest-core:1.3
+00:06.363 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom.sha256
+00:06.470 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:06.503 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:06.662 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:06.823 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:06.885 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:06.961 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha512
+00:07.017 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.043 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.195 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.346 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.409 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.437 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha1 for the dependency org.hamcrest:hamcrest-parent:1.3
+00:07.462 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom for the dependency org.hamcrest:hamcrest-parent:1.3
+00:07.463 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom.sha256
+00:07.520 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.jar for the dependency org.jetbrains.kotlin:kotlin-test:2.0.0
+00:07.537 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.jar for the dependency org.jetbrains.kotlin:kotlin-test-junit:2.0.0
+00:07.628 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha512
+00:07.657 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar.sha512
+00:07.780 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha512
+00:07.805 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.jar.sha512
+00:07.840 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha512
+00:07.956 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha256
+00:08.026 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.jar.sha512
+00:08.119 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha256
+00:08.164 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar.sha256
+00:08.174 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha256
+00:08.197 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar.sha1 for the dependency org.hamcrest:hamcrest-core:1.3
+00:08.239 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar for the dependency org.hamcrest:hamcrest-core:1.3
+00:08.318 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.google.com/junit/junit/4.13.2/junit-4.13.2.jar.sha256
+00:08.370 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Not found URL: https://maven.pkg.jetbrains.space/public/p/compose/dev/junit/junit/4.13.2/junit-4.13.2.jar.sha256
+00:08.394 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar.sha1 for the dependency junit:junit:4.13.2
+00:08.482 DEBUG :ampertest:resolveDependenciesJvmTest DependencyFile            Downloaded https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar for the dependency junit:junit:4.13.2
+00:08.486 INFO  :ampertest:resolveDependenciesJvmTest ExecuteOnChangedInputs    finished ':ampertest:resolveDependenciesJvmTest' in 7.068772334s
+00:08.494 DEBUG :ampertest:resolveDependenciesJvmTest ResolveExternalDependenciesTask resolve dependencies ampertest -- jvm jvmTest --  -- resolvePlatform=JVM nativeTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com https://maven.pkg.jetbrains.space/public/p/compose/dev resolved to:
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-test-junit/2.0.0/kotlin-test-junit-2.0.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-test/2.0.0/kotlin-test-2.0.0.jar
+  .m2.cache/junit/junit/4.13.2/junit-4.13.2.jar
+  .m2.cache/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+00:08.495 DEBUG :ampertest:compileJvmTest JvmCompileTask            compile ampertest -- jvmTest
+00:08.496 DEBUG :ampertest:compileJvmTest ExtractKt                 Skipping extract to /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d since flag file /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d.flag is correct
+00:08.496 DEBUG :ampertest:compileJvmTest ExecuteOnChangedInputs    INC: state file is missing or empty at '/Users/ismail/source/kotlinprojects/ampertest/build/incremental.state/_ampertest_compileJvmTest-9543de26d9' -> rebuilding
+00:08.496 INFO  :ampertest:compileJvmTest ExecuteOnChangedInputs    building ':ampertest:compileJvmTest'
+00:08.502 INFO  :ampertest:compileJvmTest JvmCompileTask            Sources for fragments (jvmTest) of module 'ampertest' are missing, skipping compilation
+00:08.507 INFO  :ampertest:compileJvmTest ExecuteOnChangedInputs    finished ':ampertest:compileJvmTest' in 5.364666ms

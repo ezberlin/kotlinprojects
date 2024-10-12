@@ -1,0 +1,23 @@
+{
+    "amperBuild": "0.4.0",
+    "configuration": {
+        "inputDirsDestPaths": "[.]",
+        "jarConfig": "{\"mainClassFqn\":\"MainKt\"}",
+        "outputJarPath": "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_jarJvm/ampertest-jvm.jar"
+    },
+    "inputs": [
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm"
+    ],
+    "inputsState": {
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm/META-INF/main.kotlin_module": "size 36 mtime 2024-09-13T20:26:58.025646303Z",
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm/MainKt.class": "size 630 mtime 2024-09-13T20:26:58.021327297Z"
+    },
+    "outputs": [
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_jarJvm/ampertest-jvm.jar"
+    ],
+    "outputsState": {
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_jarJvm/ampertest-jvm.jar": "size 925 mtime 2024-09-13T20:26:58.04621954Z mode 420 owner ismail group staff"
+    },
+    "outputProperties": {
+    }
+}

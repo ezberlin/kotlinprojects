@@ -1,0 +1,12 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.295 INFO  commonizeNativeDistribution Downloader                Downloading https://corretto.aws/downloads/resources/21.0.1.12.1/amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz to /Users/ismail/Library/Caches/Amper/download.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz
+04:01.900 INFO  commonizeNativeDistribution ExtractKt                 Extracting /Users/ismail/Library/Caches/Amper/download.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz to /Users/ismail/Library/Caches/Amper/extract.cache/34yizgofu6-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.2kclhx.d
+04:03.484 INFO  commonizeNativeDistribution ExecuteOnChangedInputs    building 'resolve-org.jetbrains.kotlin-kotlin-klib-commonizer-embeddable-2.0.0'
+04:11.012 INFO  commonizeNativeDistribution ExecuteOnChangedInputs    finished 'resolve-org.jetbrains.kotlin-kotlin-klib-commonizer-embeddable-2.0.0' in 7.523370584s
+04:11.030 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Acquire lock: /Users/ismail/Library/Caches/Amper/extract.cache/2zrlz6vur4-kotlin-native-prebuilt-2.0.0-macos-aarch64.tar.gz.46o13t.d/klib/commonized/2.0.0/.lock ...
+04:11.035 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Lock acquired: /Users/ismail/Library/Caches/Amper/extract.cache/2zrlz6vur4-kotlin-native-prebuilt-2.0.0-macos-aarch64.tar.gz.46o13t.d/klib/commonized/2.0.0/.lock
+04:11.039 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Calculating cache state for []
+04:11.043 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache All available targets are commonized already - Nothing to do
+04:11.047 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Lock released: /Users/ismail/Library/Caches/Amper/extract.cache/2zrlz6vur4-kotlin-native-prebuilt-2.0.0-macos-aarch64.tar.gz.46o13t.d/klib/commonized/2.0.0/.lock

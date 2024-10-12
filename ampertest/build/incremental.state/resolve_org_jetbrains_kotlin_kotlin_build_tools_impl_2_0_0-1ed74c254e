@@ -1,0 +1,53 @@
+{
+    "amperBuild": "0.4.0",
+    "configuration": {
+    },
+    "inputs": [
+    ],
+    "inputsState": {
+    },
+    "outputs": [
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-tools-impl/2.0.0/kotlin-build-tools-impl-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-tools-api/2.0.0/kotlin-build-tools-api-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.0/kotlin-compiler-embeddable-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-runner/2.0.0/kotlin-compiler-runner-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/2.0.0/kotlin-scripting-compiler-embeddable-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/2.0.0/kotlin-scripting-compiler-impl-embeddable-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-script-runtime/2.0.0/kotlin-script-runtime-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-reflect/1.6.10/kotlin-reflect-1.6.10.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.0/kotlin-daemon-embeddable-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-common/2.0.0/kotlin-build-common-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-client/2.0.0/kotlin-daemon-client-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-common/2.0.0/kotlin-scripting-common-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-jvm/2.0.0/kotlin-scripting-jvm-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar"
+    ],
+    "outputsState": {
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2024-09-13T20:21:33.18307177Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar": "size 572985 mtime 2024-09-13T20:26:29.077747881Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-common/2.0.0/kotlin-build-common-2.0.0.jar": "size 527106 mtime 2024-09-13T20:26:55.963653849Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-tools-api/2.0.0/kotlin-build-tools-api-2.0.0.jar": "size 26713 mtime 2024-09-13T20:26:55.470398569Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-build-tools-impl/2.0.0/kotlin-build-tools-impl-2.0.0.jar": "size 54305 mtime 2024-09-13T20:26:55.5868934Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.0/kotlin-compiler-embeddable-2.0.0.jar": "size 57192195 mtime 2024-09-13T20:26:34.121412839Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-runner/2.0.0/kotlin-compiler-runner-2.0.0.jar": "size 19816 mtime 2024-09-13T20:26:55.445606993Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-client/2.0.0/kotlin-daemon-client-2.0.0.jar": "size 560799 mtime 2024-09-13T20:26:55.99266589Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.0/kotlin-daemon-embeddable-2.0.0.jar": "size 346229 mtime 2024-09-13T20:26:28.466871852Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-reflect/1.6.10/kotlin-reflect-1.6.10.jar": "size 3038560 mtime 2024-09-13T20:26:29.736557562Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-script-runtime/2.0.0/kotlin-script-runtime-2.0.0.jar": "size 43404 mtime 2024-09-13T20:26:28.512269291Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-common/2.0.0/kotlin-scripting-common-2.0.0.jar": "size 196218 mtime 2024-09-13T20:26:56.037548787Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/2.0.0/kotlin-scripting-compiler-embeddable-2.0.0.jar": "size 392368 mtime 2024-09-13T20:26:55.506175536Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/2.0.0/kotlin-scripting-compiler-impl-embeddable-2.0.0.jar": "size 229492 mtime 2024-09-13T20:26:55.522813102Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-scripting-jvm/2.0.0/kotlin-scripting-jvm-2.0.0.jar": "size 150192 mtime 2024-09-13T20:26:56.021287014Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar": "size 963 mtime 2024-09-13T20:26:56.323177231Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar": "size 968 mtime 2024-09-13T20:26:56.04540659Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar": "size 1729731 mtime 2024-09-13T20:21:32.632893704Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.0/kotlinx-coroutines-core-jvm-1.5.0.jar": "size 1482528 mtime 2024-09-13T20:26:55.695292137Z mode 420 owner ismail group staff"
+    },
+    "outputProperties": {
+    }
+}

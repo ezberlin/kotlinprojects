@@ -1,0 +1,5 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.415 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.452 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    ':ampertest:compileJvm' is up-to-date

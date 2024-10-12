@@ -1,0 +1,11 @@
+JetBrains Amper version 0.4.0+7488f35
+running on Mac OS X 15.0 jvm arch aarch64
+
+00:01.374 INFO                            AmperBackend              Selected tasks to compile: :ampertest:compileJvm :ampertest:compileJvmTest
+00:01.409 INFO  :ampertest:resolveDependenciesJvmTest ExecuteOnChangedInputs    building ':ampertest:resolveDependenciesJvmTest'
+00:01.431 INFO  :ampertest:resolveDependenciesJvm ExecuteOnChangedInputs    ':ampertest:resolveDependenciesJvm' is up-to-date
+00:01.489 INFO  :ampertest:compileJvm     ExecuteOnChangedInputs    ':ampertest:compileJvm' is up-to-date
+00:08.486 INFO  :ampertest:resolveDependenciesJvmTest ExecuteOnChangedInputs    finished ':ampertest:resolveDependenciesJvmTest' in 7.068772334s
+00:08.496 INFO  :ampertest:compileJvmTest ExecuteOnChangedInputs    building ':ampertest:compileJvmTest'
+00:08.502 INFO  :ampertest:compileJvmTest JvmCompileTask            Sources for fragments (jvmTest) of module 'ampertest' are missing, skipping compilation
+00:08.507 INFO  :ampertest:compileJvmTest ExecuteOnChangedInputs    finished ':ampertest:compileJvmTest' in 5.364666ms

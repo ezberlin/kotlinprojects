@@ -1,0 +1,31 @@
+{
+    "amperBuild": "0.4.0",
+    "configuration": {
+        "jdk.url": "https://corretto.aws/downloads/resources/21.0.1.12.1/amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz",
+        "kotlin.version": "2.0.0",
+        "target.platforms": "JVM",
+        "task.output.root": "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm",
+        "user.settings": "{\"kotlin\":{\"languageVersion\":\"Kotlin19\",\"apiVersion\":\"Kotlin19\",\"allWarningsAsErrors\":false,\"suppressWarnings\":false,\"debug\":true,\"verbose\":false,\"progressiveMode\":false,\"languageFeatures\":[],\"optIns\":[],\"freeCompilerArgs\":[],\"serializationEnabled\":false,\"composeEnabled\":false},\"jvmRelease\":\"VERSION_17\"}"
+    },
+    "inputs": [
+        "/Users/ismail/source/kotlinprojects/ampertest/src",
+        "/Users/ismail/source/kotlinprojects/ampertest/resources",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+    ],
+    "inputsState": {
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2024-09-13T20:21:33.18307177Z mode 420 owner ismail group staff",
+        "/Users/ismail/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar": "size 1729731 mtime 2024-09-13T20:21:32.632893704Z mode 420 owner ismail group staff",
+        "/Users/ismail/source/kotlinprojects/ampertest/resources": "MISSING",
+        "/Users/ismail/source/kotlinprojects/ampertest/src/main.kt": "size 34 mtime 2024-09-13T20:16:48.484070748Z"
+    },
+    "outputs": [
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm"
+    ],
+    "outputsState": {
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm/META-INF/main.kotlin_module": "size 36 mtime 2024-09-13T20:26:58.025646303Z",
+        "/Users/ismail/source/kotlinprojects/ampertest/build/tasks/_ampertest_compileJvm/MainKt.class": "size 630 mtime 2024-09-13T20:26:58.021327297Z"
+    },
+    "outputProperties": {
+    }
+}
