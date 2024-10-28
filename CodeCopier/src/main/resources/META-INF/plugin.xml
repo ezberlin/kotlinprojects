@@ -1,0 +1,39 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>org.example.CodeCopier</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Code Copier</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor>Ismail Shaban</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Copy the code of open tabs for pasting into chatbots!
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <action id="org.example.codecopier.CopyCodeAction" class="org.example.codecopier.CopyCodeAction"
+                text="Copy Code From Selected File">
+            <keyboard-shortcut keymap="$default" first-keystroke="meta alt BACK_SLASH"/>
+        </action>
+        <action id="org.example.codecopier.CopyAllCodeAction" class="org.example.codecopier.CopyAllCodeAction"
+                text="Copy Code From All Open Files">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift meta alt BACK_SLASH"/>
+        </action>
+    </actions>
+</idea-plugin>
